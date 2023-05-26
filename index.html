@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #action-selector-div {
+            padding-left: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="wrapper">
+        <div>
+
+            <div id="args-container">
+                <div class="arg">
+                    <input type="text" value="My Arg">
+                    <select value="false">
+                        <option value="false">false</option>
+                        <option value="true">true</option>
+                    </select>
+                </div>
+            </div>
+            <button id="add-arg">+ add arg</button>
+        </div>
+
+        <div class="action-container" style="margin-top: 50px;">
+            <div id="action">
+                <div id="action-selector-div" parent-id="1">
+                    <select id="action-selector" value="select a value">
+                        <option value="select a value">select a value</option>
+                        <option value="argument">argument</option>
+                        <option value="constant">constant</option>
+                        <option value="and">and</option>
+                        <option value="or">or</option>
+                    </select>
+
+                    <button id="action-btn">x</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div>
+            result: <span id="result"></span>
+        </div>
+
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
